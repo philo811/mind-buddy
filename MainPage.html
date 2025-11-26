@@ -416,7 +416,7 @@
         </nav>
         <!-- Added Join Us button back to sidebar -->
         <div id="sidebar-auth-section" style="margin-top: 20px;">
-            <a href="LoginPage.html"><button class="join-us-btn" style="width: 100%;">Join Us</button></a>
+            <a href="index.html"><button class="join-us-btn" style="width: 100%;">Join Us</button></a>
         </div>
     </aside>
 
@@ -549,7 +549,7 @@
 
     // If no user is logged in, kick them back to Login Page
     if (!currentUser) {
-        window.location.href = 'LoginPage.html';
+        window.location.href = 'index.html';
     }
 
     // UPDATE SIDEBAR (Remove Join Us -> Show User)
@@ -568,7 +568,7 @@
 
     function logout() {
         localStorage.removeItem('currentUser');
-        window.location.href = 'LoginPage.html';
+        window.location.href = 'index.html';
     }
 
     // --- 2. APP STATE & NAVIGATION ---
@@ -837,3 +837,4 @@
 </body>
 
 </html>
+

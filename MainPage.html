@@ -831,26 +831,9 @@
     renderTasks();
     selectedDateDisplay.textContent = new Date().toDateString();
 
-   // Import the Firebase functions from the official CDN (browser-compatible)
-    // Using module imports so the outer <script> is `type="module"`.
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-analytics.js";
-
-    // Your web app's Firebase configuration
-    const firebaseConfig = {
-        apiKey: "AIzaSyBQINKsuh9jBhPbe2EfsXti5uviHF-CGA0",
-        authDomain: "mind-buddy-db.firebaseapp.com",
-        projectId: "mind-buddy-db",
-        storageBucket: "mind-buddy-db.appspot.com",
-        messagingSenderId: "554900575952",
-        appId: "1:554900575952:web:63ca1cfe1f493c459db0d5",
-        measurementId: "G-H7B55619KW"
-    };
-
-    // Initialize Firebase properly
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
+  
 
 </script>
 </body>
+
 </html>

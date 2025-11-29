@@ -369,7 +369,7 @@
             position: absolute; width: 100px; z-index: 10; opacity: 0.9; pointer-events: none;
         }
         #mood-buddy { bottom: 20px; right: 20px; animation: bounceIn 1s ease-out;}
-        #study-buddy { top: 90px; right: 30px; transform: scaleX(-1); animation: peekAnimation 1.2s ease-out;}
+        #study-buddy { top: 25px; right: 30px; transform: scaleX(-1); animation: peekAnimation 1.2s ease-out;}
         #focus-buddy { bottom: 30px; left: 30px; opacity: 0.8; animation: bounceIn 1s ease-out;}
 
         /* Animations */
@@ -559,8 +559,11 @@
             <div style="text-align: center; color: #555;">
                 <p style="margin-bottom: 5px; font-size: 0.9em;">Welcome,</p>
                 <h3 style="margin: 0 0 10px 0; color: #5c9e5c;">${currentUser}</h3>
-                <button onclick="logout()" style="background: #ef5350; color: white; border: none; padding: 8px 15px; border-radius: 5px; cursor: pointer; font-size: 0.8em;">
-                    <i class="fas fa-sign-out-alt"></i> Logout
+                <button onclick="logout()" 
+                onmouseover="this.style.background='#d32f2f'; this.style.transform='translateY(-2px)'"
+                onmouseout="this.style.background='#ef5350'; this.style.transform='translateY(0)'"
+                style="background: #ef5350; color: white; border: none; padding: 8px 15px; border-radius: 5px; cursor: pointer; font-size: 0.8em;transition: all 0.3s;">
+                <i class="fas fa-sign-out-alt"></i> Logout
                 </button>
             </div>
         `;
@@ -837,4 +840,5 @@
 </body>
 
 </html>
+
 

@@ -559,9 +559,14 @@
             <div style="text-align: center; color: #555;">
                 <p style="margin-bottom: 5px; font-size: 0.9em;">Welcome,</p>
                 <h3 style="margin: 0 0 10px 0; color: #5c9e5c;">${currentUser}</h3>
-                <button onclick="logout()" style="background: #ef5350; color: white; border: none; padding: 8px 15px; border-radius: 5px; cursor: pointer; font-size: 0.8em;">
-                    <i class="fas fa-sign-out-alt"></i> Logout
-                </button>
+               
+                 <button onclick="logout()" 
+                onmouseover="this.style.background='#d32f2f'; this.style.transform='translateY(-2px)'"
+                onmouseout="this.style.background='#ef5350'; this.style.transform='translateY(0)'"
+                style="background: #ef5350; color: white; border: none; padding: 8px 15px; border-radius: 5px; cursor: pointer; font-size: 0.8em;transition: all 0.3s;">
+                <i class="fas fa-sign-out-alt"></i> Logout
+                 </button>
+
             </div>
         `;
     }
@@ -837,5 +842,6 @@
 </body>
 
 </html>
+
 
 
